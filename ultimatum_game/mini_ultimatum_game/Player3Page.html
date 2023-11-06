@@ -1,0 +1,14 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block content %}
+    <div class="form-group">
+        <label for="id_punish">Do you want to punish Player 1?</label>
+        <select name="punish" id="id_punish" class="form-control">
+            <option value="">----</option>
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Next</button>
+{% endblock %}

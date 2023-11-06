@@ -1,0 +1,8 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block content %}
+    <p>Your payout: {{ player.payoff }}</p>
+    <button type="submit" class="btn btn-primary">Next</button>
+{% endblock %}
+

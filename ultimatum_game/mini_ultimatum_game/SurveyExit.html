@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block content %}
+    <div class="form-group">
+        <label for="id_capital_city">What is the capital city of Kenya?</label>
+        <select name="capital_city" id="id_capital_city" class="form-control">
+            <option value="">----</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="id_sum">What is 14 + 15?</label>
+        <input type="number" name="sum" required id="id_sum" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="id_population">What is the population of Kenya?</label>
+        <input type="number" name="population" required id="id_population" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Next</button>
+{% endblock %}
+
+
